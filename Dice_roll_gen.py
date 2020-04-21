@@ -14,5 +14,5 @@ def roll_4_d6():
 	modifier = int(((difference_of_dice_rolls)-10) /2)
 	return difference_of_dice_rolls
 
-#def roll_Barbarian_HP(x):
-    
+def roll_Barbarian_HP(x):
+    print('hello')
