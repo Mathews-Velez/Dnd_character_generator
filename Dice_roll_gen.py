@@ -14,6 +14,10 @@ def roll_4_d6():
 	modifier = int(((difference_of_dice_rolls)-10) /2)
 	return difference_of_dice_rolls
 
+def mod(x):
+    y = int((x-10)/2)
+    return y
+
 def roll_Barbarian_HP(constitution):
     #d12 created
     d12_sides = list(range(7,13))
