@@ -105,3 +105,4 @@ def Aasimar(x):
 		print(f'Charisma: {Charisma} ({Charisma_mod})')     
 		#Protector_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()+2}
 		#[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Protector_Aasimar_Stats.items()] 
+	

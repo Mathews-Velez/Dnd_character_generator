@@ -1,6 +1,6 @@
 #Import class files
-import Aasimar_Race, Dragonborn_Race, Dwarf_Race, Elf_Race, Goliath_Race, Half_Orc_Race, Human_Race, Tiefling_Race,Kenku_Race
+import Barbarian_class, Bard_class, Cleric_class, Ranger_class, Wizard_class, Rogue_class, Monk_class, Druid_class, Paladin_class, Sorcerer_class, Warlock_class, Fighter_class
 
 
 #Assign class strings to class files 
-race_list = {'Aasimar': Aasimar_Race.Aasimar, 'Dragonborn':Dragonborn_Race.Dragonborn, 'Dwarf':Dwarf_Race.Dwarf, 'Elf':Elf_Race.Elf, 'Goliath':Goliath_Race.Goliath, 'Half_Orc':Half_Orc_Race.Half_Orc, 'Human':Human_Race.Human, 'Tiefling': Tiefling_Race.Tiefling, 'Kenku': Kenku_Race.Kenku}
+class_list = {'Barbarian': Barbarian_class.Barbarian , 'Bard': Bard_class.Bard,'Cleric':Cleric_class.Cleric, 'Fighter':Fighter_class.Fighter,'Ranger': Ranger_class.Ranger, 'Wizard': Wizard_class.Wizard,  'Rogue': Rogue_class.Rogue,'Monk': Monk_class.Monk,'Druid': Druid_class.Druid,'Paladin': Paladin_class.Paladin,'Sorcerer': Sorcerer_class.Sorcerer,'Warlock': Warlock_class.Warlock }

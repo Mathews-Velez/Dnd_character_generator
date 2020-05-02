@@ -1,23 +1,22 @@
-import random, Races 
+import random, Races ,Classes
 
 while True:
 
   #random_npc_encounter_generator
   print(' Welcome to Dungeon and Dragons Character Generator \n')
-  
-  #display
 
 
   #Race Selector
   race_list = ('Human', 'Elf', 'Half_Orc', 'Dwarf', 'Tiefling', 'Dragonborn','Kenku','Goliath','Aasimar')
   chosen_race = random.choice(race_list)
-  #chosen_race = 'Aasimar'
+  chosen_race = 'Aasimar'
   print(f'Race\n -{chosen_race}')
   
   #Class selector
   character_class = ('Fighter', 'Ranger', 'Wizard', 'Bard', 'Barbarian', 'Rogue',
                      'Monk','Cleric','Druid','Paladin','Sorcerer','Warlock')
   chosen_class = random.choice(character_class)
+
   print(f'Class\n -{chosen_class}')
    #Class Subclass
   
@@ -35,8 +34,8 @@ while True:
 
   #Prompts Races.py to generate all info on the characters race
   Races.race_list[chosen_race](chosen_gender)
-  #classes .racelist[class][race]
-  #Protmpt user to ask if they would like more details on their characters background
+  Classes.class_list[chosen_class](chosen_race)
+  
 
   #Exit Function 
   try_again = input('\n\n Try again? (Press enter else n to stop)\n')

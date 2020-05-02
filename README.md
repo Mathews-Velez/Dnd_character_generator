@@ -1,2 +1,1 @@
-# Dungeons and Dragons character generator
-#this is an early build/ alpha
+This is an early build that I am currently modifying constantly.
