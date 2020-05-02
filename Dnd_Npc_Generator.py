@@ -35,7 +35,7 @@ while True:
 
   #Prompts Races.py to generate all info on the characters race
   Races.race_list[chosen_race](chosen_gender)
-
+  #classes .racelist[class][race]
   #Protmpt user to ask if they would like more details on their characters background
 
   #Exit Function 

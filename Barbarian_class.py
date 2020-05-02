@@ -10,7 +10,7 @@ def Barbarian(x):
     #Hit Dice: 1d12 per barbarian level
     print('Hit Dice\n -D12')
     #Hit Points at 1st Level: 12 + your Constitution modifier
-    print('Hit points at Level 1\n 12 + Constitution modifier')
+    print('Hit points at Level 1\n 12 + Constitution_mod')
     #Hit Points at Higher Levels: 1d12 (or 7) + your constitution modifier per barbarian level after 1st
     
     #Proficiencies
