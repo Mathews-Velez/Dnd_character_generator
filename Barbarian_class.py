@@ -17,7 +17,7 @@ def Barbarian(x):
     #Proficiencies
     print('Proficiencies')
     #Armor: Light armor, medium armor, shields
-
+    print('')
     #Weapons: Simple weapons, martial weapons
 
     #Tools: None
