@@ -9,7 +9,7 @@ while True:
   #Race Selector
   race_list = ('Human', 'Elf', 'Half_Orc', 'Dwarf', 'Tiefling', 'Dragonborn','Kenku','Goliath','Aasimar')
   chosen_race = random.choice(race_list)
-  chosen_race = 'Aasimar'
+  #chosen_race = 'Aasimar'
   print(f'Race\n -{chosen_race}')
   
   #Class selector
