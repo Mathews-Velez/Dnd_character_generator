@@ -1,5 +1,5 @@
 #Import class files
-import Barbarian_class, Bard_class, Cleric_class, Ranger_class, Wizard_class, Rogue_class, Monk_class, Druid_class, Paladin_class, Sorcerer_class, Warlock_class, Fighter_class
+from Class_files import Barbarian_class, Bard_class, Cleric_class, Ranger_class, Wizard_class, Rogue_class, Monk_class, Druid_class, Paladin_class, Sorcerer_class, Warlock_class, Fighter_class
 
 
 #Assign class strings to class files 
