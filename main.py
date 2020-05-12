@@ -16,10 +16,10 @@ while True:
   character_class = ('Fighter', 'Ranger', 'Wizard', 'Bard', 'Barbarian', 'Rogue',
                      'Monk','Cleric','Druid','Paladin','Sorcerer','Warlock')
   chosen_class = random.choice(character_class)
-
+  chosen_class = 'Barbarian'
   print(f'Class\n -{chosen_class}')
    #Class Subclass
-  
+   
 
   #Backgrounds selector 
   background_list = ('Criminal','Sailor','Acolyte','Charlatan','City Watch','Criminal','Entertainer','Fisher','Gambler','Hermit','Noble','Outlander','Sage','Smuggler','Soldier'
