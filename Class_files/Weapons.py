@@ -34,7 +34,7 @@ def martial_ranged_weapon(x=0):
     if x == 0: 
         x, damage = random.choice(list(martial_ranged_weapons.itmes()))
     else:
-        damage = martial_ranged_weapons[X]
+        damage = martial_ranged_weapons[x]
         
     return x, damage
 
