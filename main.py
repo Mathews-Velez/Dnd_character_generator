@@ -22,8 +22,7 @@ while True:
    
 
   #Backgrounds selector 
-  background_list = ('Criminal','Sailor','Acolyte','Charlatan','City Watch','Criminal','Entertainer','Fisher','Gambler','Hermit','Noble','Outlander','Sage','Smuggler','Soldier'
-  ,'Bounty Hunter','Folk Hero')
+  background_list = ('Sailor','Acolyte','Charlatan','Criminal','Entertainer','Hermit','Noble','Outlander','Sage','Soldier','Folk Hero')
   chosen_background = random.choice(background_list)
   print(f'Background\n -{chosen_background}')
 

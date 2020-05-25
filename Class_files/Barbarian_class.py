@@ -52,5 +52,6 @@ def Barbarian(x):
         weapon, damage = Weapons.simple_melee_weapon()
     print(f'  Secondary weapon{weapon,damage}')
     #equipment pack
-    
-        
+    print('-equipment pack')
+    equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
+    print(f'  {equipment_pack}')
