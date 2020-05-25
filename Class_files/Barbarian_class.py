@@ -1,5 +1,6 @@
 import random 
 import Class_files.Weapons as Weapons
+import Class_files.Equipment_packs as Equipment_packs
 def Barbarian(x):  
     
     #Print breif description
