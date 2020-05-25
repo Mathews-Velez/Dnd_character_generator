@@ -24,6 +24,6 @@ def Half_Orc(x):
   print(f"Height\n -{random.choice(range(5,7))}'{random.choice(range(1,13))}, your size is medium\n")
 
   #Stats Rolls
-  print('Stats for your adventurer\n')
+  print('Stats for your adventurer (First int= Stat Second int= Modifier )\n')
   Half_Orc_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+2, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6()+1,'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()}
   [print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Half_Orc_Stats.items()]

@@ -30,6 +30,6 @@ def Tiefling(x):
   print(f"Height\n -{random.choice(range(5,7))}'{random.choice(range(1,13))}, your size is medium\n")
 
   #Stats rolls
-  print('\nStats for your adventurer\n')
+  print('\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
   Tiefling_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6()+1,'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()+2}
   [print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Tiefling_Stats.items()]

@@ -31,6 +31,6 @@ def Goliath(x):
   print(f'Size\n -{random.choice(range(6,9))}"{random.choice(range(1,13))}')
          
   #Stats Rolls
-  print('\n\nStats for your adventurer\n')
+  print('\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
   Goliath_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+2, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6()+1,'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()}
   [print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Goliath_Stats.items()]

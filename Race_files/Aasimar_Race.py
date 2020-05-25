@@ -34,7 +34,7 @@ def Aasimar(x):
 	#Aasimar Subraces
 	C_Aasimar_subrace = random.choice(['Protector Aasimar', 'Scourge Aasimar','Fallen Aasimar'])
 	#C_Aasimar_subrace = 'Fallen Aasimar'
-	print(f'Subrace\n -{C_Aasimar_subrace}\n\nStats for your adventurer\n')
+	print(f'Subrace\n -{C_Aasimar_subrace}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
 	
 	#Stat Rolls 
 	#Fallen Aasimar Stats

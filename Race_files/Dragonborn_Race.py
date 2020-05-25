@@ -27,7 +27,7 @@ def Dragonborn(x):
   Draconic_Ancestries = {'Black' : 'Acid', 'Blue' :'Lightning','Brass':'Fire','Bronze':'Lightning','Copper':'Acid', 'Gold':'Fire', 'Green':'Poison','Red':'Fire','Silver':'Cold','White':'Cold'}
   Dragon , Damage_type  = random.choice(list(Draconic_Ancestries.items()))
   print(f'Dragon Species\n -{Dragon}')
-  print(f'Damage Type\n -{Damage_type}\n\nStats for your adventurer\n')
+  print(f'Damage Type\n -{Damage_type}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
  
   #Stat rolls
   Dragonborn_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+2, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()+1}

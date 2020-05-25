@@ -29,7 +29,7 @@ def Elf(x):
 	print(f"Height\n -{random.choice(range(5,7))}'{random.choice(range(1,13))}, your size is medium")
 	#Elf Subraces
 	C_Elf_Subrace =random.choice(['High Elf','Wood Elf','Dark Elf'])
-	print(f'Elf Subrace\n -{C_Elf_Subrace}\n\nStats for your adventurer\n')
+	print(f'Elf Subrace\n -{C_Elf_Subrace}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
 
 
 

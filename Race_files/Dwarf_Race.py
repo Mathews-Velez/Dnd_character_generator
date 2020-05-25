@@ -38,7 +38,7 @@ def Dwarf(x):
 	#Dwarf Subraces
 	Dwarf_Subraces = ('Hill Dwarf','Mountain Dwarf')
 	C_Dwarf_Subraces = random.choice(Dwarf_Subraces)
-	print(f'Subrace\n -{C_Dwarf_Subraces}\n\nStats for your adventurer\n') 
+	print(f'Subrace\n -{C_Dwarf_Subraces}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n') 
 		
 	#Stat Roll 
 	#Hill Dwarf
