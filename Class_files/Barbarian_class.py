@@ -1,4 +1,5 @@
 import random 
+import Class_files.Weapons
 def Barbarian(x):  
     
     #Print breif description
@@ -26,6 +27,15 @@ def Barbarian(x):
     print('Saving Throws:\n -Strength, Constitution')
     
     #Skills
-    skills = ('a','b','c','d','e','f')
+    skills = ('Animal Handling','Athletics','Intimidation','Nature','Perception','Survival')
+    #fetching 2 unique strings from the tuple skills
     chosen_skills = random.sample(skills,2)
     print(f'Skills:\n -{chosen_skills}')
+    
+    #equipment
+    print('Equipment')
+    #weapons
+    
+    print('Weapons')
+    
+    
