@@ -1,4 +1,4 @@
-import random, Races ,Classes
+import random, Races ,Classes, Backgrounds
 
 while True:
 
@@ -33,7 +33,9 @@ while True:
 
   #Prompts Races.py to generate all info on the characters race
   Races.race_list[chosen_race](chosen_gender)
+  #Prompts Classes.py to generate all the info on the characters class
   Classes.class_list[chosen_class](chosen_race)
+  #Prompts Backgrounds.py to generate all the info on the chracters background
   
 
   #Exit Function 
