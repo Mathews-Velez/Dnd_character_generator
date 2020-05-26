@@ -4,27 +4,27 @@ import Class_files.Equipment_packs as Equipment_packs
 def Barbarian(x):  
     
     #Print breif description
-    print('\n\nYour class\n\nBarbarian\n -A fierce warrior of primitive background who can enter a battle rage')
+    print('\n\nYour class\n\nBarbarian\n -Filled with their destructive rage and primal instincts, the barbarian is the class you choose if you want to be the meat shield in the front line dealing great amounts of damage. Who needs a shield when you can stand your foes’ puny attacks with your hardened skin and/or high evasiveness?')
     #Print Class Features
     print('For stat priority, Strength followed by Constitution.')
     
     #Hit points
-    #Hit Dice: 1d12 per barbarian level
+    #Hit Dice: 
     print('Hit Dice\n -d12')
-    #Hit Points at 1st Level: 12 + your Constitution modifier
+    #Hit Points at 1st Level:modifier
     print('Hit points at Level 1\n 12 + Constitution_mod')
-    #Hit Points at Higher Levels: 1d12 (or 7) + your constitution modifier per barbarian level after 1st
+    #Hit Points at Higher Levels:
     print('Hit Points at Higher Levels: 1d12(or 7) + your constitution modifier per barbarian level after 1st')
      
     #Proficiencies
     print('\nProficiencies')
-    #Armor: Light armor, medium armor, shields
+    #Armor: 
     print('-Armour:\n -Light armor, medium armor, shields')
-    #Weapons: Simple weapons, martial weapons
+    #Weapons: 
     print('-Weapons:\n -Simple weapons, martial weapons')
-    #Tools: None
+    #Tools:
     print('-Tools:\n -None')
-    #Saving Throws: Strength, Constitution
+    #Saving Throws:
     print('-Saving Throws:\n -Strength, Constitution')
     
     #Skills

@@ -1,6 +1,6 @@
 import random 
 # background story
-def background():
+def Criminal():
      #Criminal speciality
      Criminal_specialities =("Blackmailer","Burglar","Enforcer","Fence","Highway robber","Hired killer","Pickpocket","Smuggler")
      Criminal_speciality = random.choice(Criminal_specialities)

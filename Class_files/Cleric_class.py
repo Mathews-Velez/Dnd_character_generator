@@ -4,27 +4,27 @@ import Class_files.Equipment_packs as Equipment_packs
 def Cleric(x):  
     
     #Print breif description
-    print('\n\nYour class\n\nCleric\n -Clerics are conduits of divine magic, manifesting it as miraculous effects.The gods dont grant this power to everyone who seeks it, but only those chosen to fulfill a high calling')
+    print('\n\nYour class\n\nCleric\n -As well as with bards, clerics cover a wide amount of possibilities depending on the god you choose to follow. They are high spirited servants of their deities and follow their domains to choose a way of life. Both a warrior and spellcaster, they are able to cover practically any role in a party. Depending on their subclass, their Channel Divinity ability acts in different ways, granting direct powers from their gods.')
     #Print Class Features
     print('For stat priority, Wisdom followed by Strength or Constitution.')
     
     #Hit points
-    #Hit Dice: 1d12 per barbarian level
+    #Hit Dice: 
     print('Hit Dice\n -d8')
-    #Hit Points at 1st Level: 8 + your Constitution modifier
+    #Hit Points at 1st Level:modifier
     print('Hit points at Level 1\n 8 + Constitution_mod')
-    #Hit Points at Higher Levels: 1d8 (or 5) + your constitution modifier per barbarian level after 1st
-    print('Hit Points at Higher Levels: 1d8(or 5) + your constitution modifier per barbarian level after 1st')
+    #Hit Points at Higher Levels:
+    print('Hit Points at Higher Levels: 1d8(or 5) + your constitution modifier per Cleric level after 1st')
      
     #Proficiencies
     print('\nProficiencies')
-    #Armor: Light armor, medium armor, shields
+    #Armor: 
     print('-Armour:\n -Light armor, medium armor, shields')
-    #Weapons: Simple weapons, martial weapons
+    #Weapons: 
     print('-Weapons:\n -Simple weapons')
-    #Tools: None
+    #Tools: 
     print('-Tools:\n -None')
-    #Saving Throws: Strength, Constitution
+    #Saving Throws:
     print('-Saving Throws:\n -Wisdom, Charisma')
     
     #Skills

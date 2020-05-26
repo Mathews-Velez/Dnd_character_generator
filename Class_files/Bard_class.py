@@ -4,27 +4,27 @@ import Class_files.Equipment_packs as Equipment_packs
 def Bard(x):
     
     #Print breif description
-    print('\n\nYour class\n\nBard\n -The Bard is a master of song,speech, and the magic they contain. Bards say that the multiverse was spoken into existence, that the words of the gods gave it shape, and that echoes of these primordial Words of Creation still respond throughout the cosmos.')
+    print('\n\nYour class\n\nBard\n -A true jack of all trades; a bard can cover great amounts of ground when speaking about what they are able to do. A performer at heart, an inspiration to its allies, but above all a foul-mouthed to its foes. With its great charisma, his/her voice becomes its greatest weapon.')
     #Print Class Features
     print('For stat priority, Charisma followed by dexterity')
     
     #Hit points
-    #Hit Dice: 1d12 per barbarian level
+    #Hit Dice: 
     print('Hit Dice\n -d8')
-    #Hit Points at 1st Level: 8 + your Constitution modifier
+    #Hit Points at 1st Level:
     print('Hit points at Level 1\n 8 + Constitution_mod')
-    #Hit Points at Higher Levels: 1d8 (or 5) + your constitution modifier per barbarian level after 1st
+    #Hit Points at Higher Levels:
     print('Hit Points at Higher Levels: 1d8(or 5) + your constitution modifier per barbarian level after 1st')
      
     #Proficiencies
     print('\nProficiencies')
-    #Armor: Light armor, medium armor, shields
+    #Armor: 
     print('-Armour:\n -Light armor')
-    #Weapons: Simple weapons, martial weapons
+    #Weapons:
     print('-Weapons:\n -Simple weapons, Handcrossbows, longswords, rapiers, shortswords')
-    #Tools: None
+    #Tools: 
     print('-Tools:\n -Three musical instruments of your choice')
-    #Saving Throws: Strength, Constitution
+    #Saving Throws: 
     print('-Saving Throws:\n -Dexterity, Charisma')
     
     #Skills
