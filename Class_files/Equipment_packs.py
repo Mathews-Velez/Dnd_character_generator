@@ -25,7 +25,7 @@ def equipment_pack (x):
         return Entertainers_pack
     elif x == 'Explorers_pack':
         return Explorers_pack
-    elif x == 'Preists_kit':
+    elif x == 'Priests_kit':
         return Priests_kit
     elif x == 'Scholars_pack':
         return Scholars_pack
