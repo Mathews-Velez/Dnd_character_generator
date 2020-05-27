@@ -13,4 +13,7 @@ def Acolyte():
     #Flaw
     Flaws = ("I judge others harshly, and myself even more severely.","I put too much trust in those who weild power within my temple's hierarchy.","My piety sometimes leads me to trust those taht profess faith in my god","I am inflexible in my thinking.","I am suspicious of strangers and expect the worst of them.","Once I pick a goal, I become obsessed with it to the detriment of everything else in my life")
     Flaw = random.choice(Flaws)
-    return Personality_Trait,Ideal,Bond,Flaw
+    print(f'Personality trait:\n -{Personality_Trait}')
+    print(f'Trait:\n -{Ideal}')
+    print(f'Bond: -{Bond}')
+    print('Falw: -{Flaw}')

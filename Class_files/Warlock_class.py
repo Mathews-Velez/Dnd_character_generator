@@ -2,7 +2,7 @@ import random
 def Warlock(x):  
 
     #Print breif description
-    print('hello')
+    print( 'hello')
 
     #Print Class Features
     

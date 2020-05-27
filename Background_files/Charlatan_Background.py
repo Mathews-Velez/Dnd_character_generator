@@ -13,7 +13,10 @@ def Charlatan():
     #Flaw
     Flaws = ("I can't resist a pretty face","I'm always in debt.I spend my ill-gotten gains on decadent luxuries faster than I bring them in.","I'm convinced that no one could ever fool me the way I fool others","I'm too greedy for my own good. I can't resist taking a risk if there's money involved.","I can't resist swindling people who are more powerful than me","I hate to admit it and will hate myself for it, but I'll run and perserve my own hide if the going gets tough. ")
     Flaw = random.choice(Flaws)
-    return Favorite_scheme,Personality_Trait,Ideal,Flaw
+    print(f'Favorite scheme:\n -{Favorite_scheme}')
+    print(f'Personality trait:\n -{Personality_Trait}')
+    print(f'Trait:\n -{Ideal}')
+    print('Falw: -{Flaw}')
     
     
     

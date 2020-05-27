@@ -21,5 +21,3 @@ def Ranger(x):
     #Weapons: 
 
     #Tools: 
-
-    #Saving Throws:

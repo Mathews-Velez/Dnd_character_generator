@@ -16,5 +16,9 @@ def Criminal():
      #Flaw
      Flaws = ("When I see something valuable, I can't think about anything but how to steal it","When faced with a choice between money and my friends, I usually choose the money","If there's a plan , I'll forget it. If I don't forget it, I'll ignore it.","I have a 'tell' that reveals when I'm lying.","I turn tail and run when things look bad.","An innocent person is in prison for a crime that I committed.I'm okay with that.")
      Flaw =random.choice(Flaws)
+     print(f'Criminal speciality:\n -{Criminal_speciality}')
+     print(f'Bond:\n -{Bond}')
+     print(f'Personality trait:\n -{Personality_trait}')
+     print('Falw: -{Flaw}')
      
      
