@@ -3,7 +3,7 @@ import random, Races, Classes, Backgrounds
 
 while True:
 
-  print(' Welcome to Dungeon and Dragons Character Generator \n')
+  print(' \n\nWelcome to Dungeon and Dragons Character Generator \n')
 
 
   #Race Selector
@@ -13,14 +13,14 @@ while True:
   print(f'Race\n -{chosen_race}')
 
   #Class selector
-  character_class = ('Fighter', 'Ranger', 'Wizard', 'Bard', 'Barbarian', 'Rogue',
-                     'Monk','Cleric','Druid','Paladin','Sorcerer','Warlock')
+  character_class = ('Barbarian','Bard','Cleric','Druid','Fighter','Monk')#,'Paladin','Ranger','Rogue','Sorcerer','Warlock','Wizard')
   chosen_class = random.choice(character_class)
   print(f'Class\n -{chosen_class}')
 
   #Backgrounds selector
   background_list = ('Acolyte','Charlatan','Criminal')#('Sailor','Acolyte','Charlatan','Criminal','Entertainer','Hermit','Noble','Outlander','Sage','Soldier','Folk Hero','Urchin')
   chosen_background = random.choice(background_list)
+  #chosen_background = ''
   print(f'Background\n -{chosen_background}')
 
   #Gender Selector
