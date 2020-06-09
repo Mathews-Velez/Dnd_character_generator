@@ -30,7 +30,14 @@ def Dragonborn(x):
   print(f'Damage Type\n -{Damage_type}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
  
   #Stat rolls
-  Dragonborn_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+2, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()+1}
+  Dragonborn_Stats = {
+    'Strength:':Dice_roll_gen.roll_4_d6()+2, 
+    'Dexterity:':Dice_roll_gen.roll_4_d6(),
+    'Constitution:':Dice_roll_gen.roll_4_d6(),
+    'Intelligence:':Dice_roll_gen.roll_4_d6(),
+    'Wisdom:':Dice_roll_gen.roll_4_d6()+1,
+    'Charisma:':Dice_roll_gen.roll_4_d6()+1
+                      }
   [print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Dragonborn_Stats.items()]
   
   

@@ -33,76 +33,20 @@ def Aasimar(x):
 	
 	#Aasimar Subraces
 	C_Aasimar_subrace = random.choice(['Protector Aasimar', 'Scourge Aasimar','Fallen Aasimar'])
-	#C_Aasimar_subrace = 'Fallen Aasimar'
+	C_Aasimar_subrace = 'Protector Aasimar'
 	print(f'Subrace\n -{C_Aasimar_subrace}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
 	
 	#Stat Rolls 
 	#Fallen Aasimar Stats
 	if C_Aasimar_subrace == 'Fallen Aasimar':
-		Strength = Dice_roll_gen.roll_4_d6()+1
-		Strength_mod = Dice_roll_gen.mod(Strength)
-		print(f'Strength: {Strength} ({Strength_mod})')
-		Dexterity = Dice_roll_gen.roll_4_d6()
-		Dexterity_mod = Dice_roll_gen.mod(Dexterity)
-		print(f'Dexterity: {Dexterity} ({Dexterity_mod})')
-		Constitution = Dice_roll_gen.roll_4_d6()
-		Constitution_mod = Dice_roll_gen.mod(Constitution)
-		print(f'Constitution: {Constitution} ({Constitution_mod})')
-		Intelligence = Dice_roll_gen.roll_4_d6()
-		Intelligence_mod = Dice_roll_gen.mod(Intelligence)
-		print(f'Intelligence: {Intelligence} ({Intelligence_mod})')
-		Wisdom = Dice_roll_gen.roll_4_d6()
-		Wisdom_mod = Dice_roll_gen.mod(Wisdom)
-		print(f'Wisdom: {Wisdom} ({Wisdom_mod})')
-		Charisma = Dice_roll_gen.roll_4_d6()+2
-		Charisma_mod = Dice_roll_gen.mod(Charisma)
-		print(f'Charisma: {Charisma} ({Charisma_mod})')
-  		#Fallen_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+1, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()+2}
-		#[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Fallen_Aasimar_Stats.items()]
-
+		Fallen_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6()+1, 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()+2}
+		[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Fallen_Aasimar_Stats.items()]
 	#Scourge Aasimar Stats
 	if C_Aasimar_subrace == 'Scourge Aasimar':
-		Strength = Dice_roll_gen.roll_4_d6()
-		Strength_mod = Dice_roll_gen.mod(Strength)
-		print(f'Strength: {Strength} ({Strength_mod})')
-		Dexterity = Dice_roll_gen.roll_4_d6()
-		Dexterity_mod = Dice_roll_gen.mod(Dexterity)
-		print(f'Dexterity: {Dexterity} ({Dexterity_mod})')
-		Constitution = Dice_roll_gen.roll_4_d6()+1
-		Constitution_mod = Dice_roll_gen.mod(Constitution)
-		print(f'Constitution: {Constitution} ({Constitution_mod})')
-		Intelligence = Dice_roll_gen.roll_4_d6()
-		Intelligence_mod = Dice_roll_gen.mod(Intelligence)
-		print(f'Intelligence: {Intelligence} ({Intelligence_mod})')
-		Wisdom = Dice_roll_gen.roll_4_d6()
-		Wisdom_mod = Dice_roll_gen.mod(Wisdom)
-		print(f'Wisdom: {Wisdom} ({Wisdom_mod})')
-		Charisma = Dice_roll_gen.roll_4_d6()+2
-		Charisma_mod = Dice_roll_gen.mod(Charisma)
-		print(f'Charisma: {Charisma} ({Charisma_mod})')
-  		#Scourge_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6()+1,'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()+2}
-		#[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Scourge_Aasimar_Stats.items()]
-	
+		Scourge_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(),'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6()+1,'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()+2}
+		[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Scourge_Aasimar_Stats.items()]
 	#Protector Aasimar
-	if C_Aasimar_subrace == 'Protector Aasimar':
-		Strength = Dice_roll_gen.roll_4_d6()
-		Strength_mod = Dice_roll_gen.mod(Strength)
-		print(f'Strength: {Strength} ({Strength_mod})')
-		Dexterity = Dice_roll_gen.roll_4_d6()
-		Dexterity_mod = Dice_roll_gen.mod(Dexterity)
-		print(f'Dexterity: {Dexterity} ({Dexterity_mod})')
-		Constitution = Dice_roll_gen.roll_4_d6()
-		Constitution_mod = Dice_roll_gen.mod(Constitution)
-		print(f'Constitution: {Constitution} ({Constitution_mod})')
-		Intelligence = Dice_roll_gen.roll_4_d6()
-		Intelligence_mod = Dice_roll_gen.mod(Intelligence)
-		print(f'Intelligence: {Intelligence} ({Intelligence_mod})')
-		Wisdom = Dice_roll_gen.roll_4_d6()+1
-		Wisdom_mod = Dice_roll_gen.mod(Wisdom)
-		print(f'Wisdom: {Wisdom} ({Wisdom_mod})')
-		Charisma = Dice_roll_gen.roll_4_d6()+2
-		Charisma_mod = Dice_roll_gen.mod(Charisma)
-		print(f'Charisma: {Charisma} ({Charisma_mod})')     
-		#Protector_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()+2}
-		#[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Protector_Aasimar_Stats.items()] 
-	
+	if C_Aasimar_subrace == 'Protector Aasimar':    
+		Protector_Aasimar_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6(),'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()+2}
+		[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Protector_Aasimar_Stats.items()] 
+	                                                             
