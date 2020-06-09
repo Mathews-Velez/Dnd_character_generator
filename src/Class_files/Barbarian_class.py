@@ -26,7 +26,7 @@ def Barbarian(gender):
     print(f'Skills:\n -{chosen_skills}')
 
     #equipment
-    print('\nEquipment')
+    print('\nClass Equipment')
     print('-Weapons:')
     #first choice weapon
     first_choice = random.choice([1,3])

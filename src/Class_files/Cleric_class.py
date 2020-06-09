@@ -34,7 +34,7 @@ def Cleric(x):
     print(f'Skills:\n -{chosen_skills}')
     
     #equipment
-    print('\nEquipment')
+    print('\nClass Equipment')
     
     #weapons
     print('-Weapons')

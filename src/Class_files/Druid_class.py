@@ -41,7 +41,7 @@ def Druid(x):
     #first choice weapon
     First_choice = random.choice([1,2,3])
     if First_choice == 1:
-        weapon,damage = 'Wooden shield',''
+        weapon,damage = 'Wooden shield','+2ac'
     elif First_choice == 2:
         weapon,damage= Weapons.simple_melee_weapon()
     elif First_choice == 3:
