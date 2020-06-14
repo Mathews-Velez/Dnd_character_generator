@@ -15,8 +15,8 @@ from Class_files import Barbarian_class,\
 class_list = {
 	'Barbarian': Barbarian_class.Barbarian,
 	'Bard': Bard_class.Bard,
-	'Cleric':Cleric_class.Cleric,
-	'Fighter':Fighter_class.Fighter,
+	'Cleric': Cleric_class.Cleric,
+	'Fighter': Fighter_class.Fighter,
 	'Ranger': Ranger_class.Ranger,
 	'Wizard': Wizard_class.Wizard,
 	'Rogue': Rogue_class.Rogue,
