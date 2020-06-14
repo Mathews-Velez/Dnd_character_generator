@@ -4,10 +4,10 @@ def Kenku(gender):
 
   # Traits
   feather_color = random.choice(['Dark brown','Jet black','Charcol black','Dark red'])
-  print(f'Feather color: {feather_color}')
+  print(f'Feather Color: {feather_color}')
 
   eye_color = 'Black'
-  print(f'Eye color: {eye_color}}')
+  print(f'Eye color: {eye_color}')
 
   inches = random.choice(range(1,13))
   feet = random.choice(range(4,6))
