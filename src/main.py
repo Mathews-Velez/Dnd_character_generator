@@ -13,8 +13,7 @@ while True:
   print(f'Race\n -{chosen_race}')
 
   #Class selector
-  character_class = ('Fighter', 'Ranger', 'Wizard', 'Bard', 'Barbarian', 'Rogue',
-                     'Monk','Cleric','Druid','Paladin','Sorcerer','Warlock')
+  character_class = ('Fighter', 'Ranger', 'Wizard', 'Bard', 'Barbarian', 'Rogue', 'Monk','Cleric','Druid','Paladin','Sorcerer','Warlock')
   chosen_class = random.choice(character_class)
   print(f'Class\n -{chosen_class}')
 
