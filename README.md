@@ -6,11 +6,11 @@ Generate race, class, and backgrounds for DND characters.
 
 # Setup
 
-Run `git clone https://Mathews-Velez/Dnd-_Character_Generator/src`. You may want to move this `src` file into a folder with a more suitable name, such as `dnd_gen`.
+Run `git clone https://Mathews-Velez/Dnd-_Character_Generator/`. If you only want to use the program, download the `src` directory and rename it to something like `dnd_gen`.
 
 # Usage
 
-No inputs are required, simply run `python3 main.py`. And follow the instructions provided.
+No inputs are required, simply run `python3 main.py`, and follow the instructions provided. `main.py` is located in the `src` directory.
 
 ---
 
