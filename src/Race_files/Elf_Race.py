@@ -1,50 +1,50 @@
-import random,Dice_roll_gen
-def Elf(x):    
-	
-	#Family Names
-	C_Elf_Family_Name =random.choice(['Amakiir(Gemflower)','Amastacia(Starflower)','Galanodel(Moonwhisper)','Holimion(Diamonddew)','Ilphelkiir(Gemblossom)','Liadon(Silverfrond)','Miliamne(Oakenheel)','Nailo(Nightbreeze)','Siannodel(Moonbrook)','Xiloscient(Goldpetal)'])
-	#Elf Male Names
-	if x == 'Male':
-	 chosen_E_m_first = random.choice(['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aust', 'Berio', 'Berrian',
-	          'Carric', 'Enialis', 'Heian', 'Ivellios', 'Laucian', 'Mindartis',
-	          'Paelian', 'Quarian', 'Tharivol', 'Soveliss', 'Riardon'])
-	 print(f'First name\n -{chosen_E_m_first}\nFamily name\n -{C_Elf_Family_Name}') 
-	#Elf Female Names
-	if x == 'Female':
-	  chosen_E_f_first = random.choice(['Adire', 'Birel', 'Caelynn', 'Drusilia', 'Enna', 'Leshanna',
-	          'Sariel', 'Vadannia', 'Naivara', 'Theirastra', 'Queleanna', 'Lia',
-	          'Shava', 'Silaqui', 'Mialee', 'Jelenneth', 'Meriele'])
-	  print(f'First name\n -{chosen_E_f_first}\nFamily name\n -{C_Elf_Family_Name}')
+import Dice_roll_gen, random
+def Elf(x):
 
-	#Elf traits
-	#Age
-	print(f'Age\n -{random.choice(range(50,750))}')
-	#Eye Color
+	c_elf_family_name = random.choice(['Amakiir(Gemflower)', 'Amastacia(Starflower)', 'Galanodel(Moonwhisper)', 'Holimion(Diamonddew)', 'Ilphelkiir(Gemblossom)', 'Liadon(Silverfrond)', 'Miliamne(Oakenheel)', 'Nailo(Nightbreeze)', 'Siannodel(Moonbrook)', 'Xiloscient(Goldpetal)'])
+
+	name_options = {
+		"Male": ['Adran', 'Aelar', 'Aramil', 'Arannis', 'Aust', 'Berio', 'Berrian', 'Carric', 'Enialis', 'Heian', 'Ivellios', 'Laucian', 'Mindartis', 'Paelian', 'Quarian', 'Tharivol', 'Soveliss', 'Riardon'],
+		"Female": ['Adire', 'Birel', 'Caelynn', 'Drusilia', 'Enna', 'Leshanna', 'Sariel', 'Vadannia', 'Naivara', 'Theirastra', 'Queleanna', 'Lia', 'Shava', 'Silaqui', 'Mialee', 'Jelenneth', 'Meriele']
+	}
+
+	name = random.choice(name_options[gender])
+	print(f'First name: {name}\nFamily name: {c_elf_family_name}')
+
+	#Traits
+	age = random.choice(range(50,750))
+	print(f'Age: {age}')
+
 	eye_color = random.choice(['Blue','Violet','Green'])
-	print(f'Eye color\n -{eye_color}')
-	#Hair color
+	print(f'Eye Color: {eye_color}')
+
 	hair_color = random.choice(['Dark brown','Autum Orange','Mossy Green','Deep Gold'])
-	print(f'Hair color\n -{hair_color}')
-	#Size
-	print(f"Height\n -{random.choice(range(5,7))}'{random.choice(range(1,13))}, your size is medium")
-	#Elf Subraces
-	C_Elf_Subrace =random.choice(['High Elf','Wood Elf','Dark Elf'])
-	print(f'Elf Subrace\n -{C_Elf_Subrace}\n\nStats for your adventurer (First int= Stat Second int= Modifier )\n')
+	print(f'Hair Color: {hair_color}')
+
+	inches = random.choice(range(1,13))
+	feet = random.choice(range(5,7))
+	print(f'Height: {feet}\"{inches}, your size is medium')
 
 
+	#Subraces
+	c_elf_subrace = random.choice([
+		'High Elf',# +2 dexterity, +1 intelligence
+		'Wood Elf',# +2 dexterity, +1 wisdom
+		'Dark Elf'# +2 dexterity
+	])
+	print(f'Subrace: {c_elf_subrace}')
 
 	#Stat Rolls
-	#High Elf Stats
-	if C_Elf_Subrace == 'High Elf':
-		High_Elf_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6()+2,'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6()+1,'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()}
-		[[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in High_Elf_Stats.items()]]
-	
-	#Wood Elf Stats
-	if C_Elf_Subrace == 'Wood Elf':
-		Wood_Elf_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6()+2,'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6()+1,'Charisma:':Dice_roll_gen.roll_4_d6()}
-		[[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Wood_Elf_Stats.items()]]
-	
-	#Dark Elf Aasimar
-	if C_Elf_Subrace == 'Dark Elf':
-		Dark_Elf_Stats = {'Strength:':Dice_roll_gen.roll_4_d6(), 'Dexterity:':Dice_roll_gen.roll_4_d6()+2,'Constitution:':Dice_roll_gen.roll_4_d6(),'Intelligence:':Dice_roll_gen.roll_4_d6(),'Wisdom:':Dice_roll_gen.roll_4_d6(),'Charisma:':Dice_roll_gen.roll_4_d6()}
-		[[print(f'{key}, {value},({(int((value-10)/2))})') for key, value in Dark_Elf_Stats.items()]] 
+  print('\n\nStats for your adventurer.\n[Stat]: [Value] ([Modifier])\n')
+	elf_stats = {
+		'Strength': Dice_roll_gen.roll_4_D6(),
+		'Dexterity': Dice_roll_gen.roll_4_D6(2),
+		'Constitution': Dice_roll_gen.roll_4_D6(),
+		'Intelligence': Dice_roll_gen.roll_4_D6(1 if c_elf_subrace == 'High Elf' else 0),
+		'Wisdom': Dice_roll_gen.roll_4_D6(1 if c_elf_subrace == 'Wood Elf' else 0),
+		'Charisma': Dice_roll_gen.roll_4_D6()
+	}
+
+  [print(f'{stat}: {data[0]} ({data[1]})') for stat, data in elf_stats.items()]
+
+  # Created variables: gender, name, c_elf_family_name, age, eye_color, hair_color, inches, feet, c_elf_subrace, elf_stats
