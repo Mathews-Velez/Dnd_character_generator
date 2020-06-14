@@ -7,3 +7,12 @@ Before you submit your work, please be sure to check out the [templates](./.gith
 # Cleanliness
 
 Because of the shear volume of text required for the project, many files are generated. Please try your best to keep the root directory clean. Group your files into separate folders based on their function.
+
+# Formatting
+
+- LF Line Endings (See [wikipedia](https://en.wikipedia.org/wiki/Newline))
+- Double-spaced indents
+- UTF-8 Encoding
+- lowercase_underscore_variable_names
+- camel_Case_Underscore_Function_Names
+- TitleCaseNoSpacesClassNames
