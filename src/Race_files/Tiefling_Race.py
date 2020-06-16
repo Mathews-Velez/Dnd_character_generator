@@ -37,6 +37,6 @@ def Tiefling(gender):
     'Charisma': Dice_roll_gen.roll_4_D6(2)
   }
 
-  [print(f'{stat}: {data[0]} ({data[1]})') for stat, data in half_orc_stats.items()]
+  [print(f'{stat}: {data[0]} ({data[1]})') for stat, data in tiefling_stats.items()]
 
   # Created variables: gender, name, tiefling_virtue_name, age, eye_color, hair_color, inches, feet, tiefling_stats
