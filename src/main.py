@@ -5,32 +5,21 @@ while True:
 
   print(' \n\nWelcome to Dungeon and Dragons Character Generator \n')
 
+  race = random.choice(list(Races.race_list.keys()))
+  print(f'Race: {race}')
 
-  #Race Selector
-  race_list = ('Human', 'Elf', 'Half_Orc', 'Dwarf', 'Tiefling', 'Dragonborn','Kenku','Goliath','Aasimar')
-  chosen_race = random.choice(race_list)
-  #chosen_race = 'Aasimar'
-  print(f'Race\n -{chosen_race}')
+  class_ = random.choice(list(Classes.class_list.keys()))
+  print(f'Class: {class_}')
 
-  #Class selector
-  character_class = ('Barbarian','Bard','Cleric','Druid','Fighter','Monk')#,'Paladin','Ranger','Rogue','Sorcerer','Warlock','Wizard')
-  chosen_class = random.choice(character_class)
-  print(f'Class\n -{chosen_class}')
+  background = random.choice(list(Backgrounds.background_list.keys()))
+  print(f'Background: {background}')
 
-  #Backgrounds selector
-  background_list = ('Acolyte','Charlatan','Criminal')#('Sailor','Acolyte','Charlatan','Criminal','Entertainer','Hermit','Noble','Outlander','Sage','Soldier','Folk Hero','Urchin')
-  chosen_background = random.choice(background_list)
-  #chosen_background = ''
-  print(f'Background\n -{chosen_background}')
+  gender = random.choice(["Male", "Female"])
+  print(f'Gender: {gender}')
 
-  #Gender Selector
-  gender_list = ('Male','Female')
-  chosen_gender = random.choice(gender_list)
-  print(f'Gender\n -{chosen_gender}')
-
-  Races.race_list[chosen_race](chosen_gender)# generate all info on the character's race
-  Classes.class_list[chosen_class](chosen_race)# generate all the info on the characters class
-  Backgrounds.background_list[chosen_background]()# generate all the info on the characters background
+  Races.race_list[race](gender)# generate all info on the character's race
+  Classes.class_list[class_](race)# generate all the info on the characters class
+  Backgrounds.background_list[background]()# generate all the info on the characters background
 
   #Exit Function
   try_again = input('\n\nTry again? (y/n): ')

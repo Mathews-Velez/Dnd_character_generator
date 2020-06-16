@@ -2,6 +2,6 @@ from Background_files import Acolyte_Background, Charlatan_Background, Criminal_
 
 background_list = {
 	'Acolyte': Acolyte_Background.Acolyte,
-	'Charlatan':Charlatan_Background.Charlatan,
-	'Criminal':Criminal_Background.Criminal
+	'Charlatan': Charlatan_Background.Charlatan,
+	'Criminal': Criminal_Background.Criminal
 }
