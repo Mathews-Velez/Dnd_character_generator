@@ -13,7 +13,3 @@ def roll_4_d6():
 
 	return difference_of_dice_rolls, modifier
 
-def roll_Barbarian_HP(constitution):
-    d12 = range(7,13)
-    hp = random.choice(d12) + constitution
-    return hp
