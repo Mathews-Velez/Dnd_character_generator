@@ -28,13 +28,13 @@ def Fighter(x):
     print('-Saving Throws:\n -Strength, Constitution')
     
     #Skills
-    skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
+    skills = ('Acrobatics','Animal Handling','Athletics','History','Insight','Intimidation','Perception','Survival')
     #fetching 2 unique strings from the tuple skills
     chosen_skills = random.sample(skills,2)
     print(f'Skills:\n -{chosen_skills}')
     
     #equipment
-    print('\nEquipment')
+    print('\nClass Equipment')
     #weapons
     print('-Weapons')
     

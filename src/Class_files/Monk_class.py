@@ -14,21 +14,19 @@ def Monk(x):
     #Hit Points at 1st Level:
     print('Hit points at Level 1\n 8 + Constitution_mod')
     #Hit Points at Higher Levels: 1d8 (or 5) + your constitution modifier per barbarian level after 1st
-    print('Hit Points at Higher Levels: 1d10(or 6) + your constitution modifier per Fighter level after 1st')
+    print('Hit Points at Higher Levels: 1d8(or 5) + your constitution modifier per Fighter level after 1st')
      
     #Proficiencies
     print('\nProficiencies')
-    #Armor:
-    print('-Armour:\n -All armor and shields')
     #Weapons: 
-    print('-Weapons:\n -Simple weapons, Martial weapons')
+    print('-Weapons:\n -Simple weapons, Shortswords')
     #Tools: None
-    print('-Tools:\n -None')
+    print("-Tools:\n -Choose one type of artisan's tools or one musical instrument.")
     #Saving Throws: 
-    print('-Saving Throws:\n -Strength, Constitution')
+    print('-Saving Throws:\n -Strength, Dexterity')
     
     #Skills
-    skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
+    skills = ('Acrobatics','Athletics','History','Insight','Religion','Stealth')
     #fetching 2 unique strings from the tuple skills
     chosen_skills = random.sample(skills,2)
     print(f'Skills:\n -{chosen_skills}')
@@ -41,22 +39,15 @@ def Monk(x):
     #first choice weapon
     first_choice = random.choice([1,2])
     if first_choice == 1:
-        weapon,damage = Weapons.martial_melee_weapon()
+        weapon,damage = Weapons.martial_melee_weapon('Shortsword')
     elif first_choice == 2:
-        weapon,damage= Weapons.martial_melee_weapon()
-    
+        weapon,damage= Weapons.simple_melee_weapon()
     print(f'  Primary weapon {weapon,damage}')
-    
-    #second weapon choice 
-    second_choice = random.choice([1,2])
-    if second_choice == 1:
-        weapon, damage = Weapons.simple_ranged_weapon('Light Crossbow')
-    elif second_choice == 2:
-        weapon, damage = Weapons.simple_melee_weapon('Handaxe')
-    print(f'  Secondary weapon{weapon,damage}')
-    
+    #second weapon
+    weapon, damage = Weapons.simple_ranged_weapon('Dart')
+    print(f'  Secondary weapon 10{weapon,damage}')   
     #equipment pack
-    print('-equipment pack')
+    print('-Class Equipment Pack')
     Thrid_choice = random.choice([1,2])
     if Thrid_choice == 1:
         equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')
