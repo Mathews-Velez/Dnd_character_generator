@@ -14,7 +14,7 @@ def Paladin(x):
 	#Hit Points at 1st Level:
 	print('Hit points at Level 1\n 10 + Constitution_mod')
 	#Hit Points at Higher Levels: 1d8 (or 5) + your constitution modifier per barbarian level after 1st
-	print('Hit Points at Higher Levels: 1d10(or 6) + your constitution modifier per Paladin level after 1st')
+	print('Hit Points at Higher Levels: roll 1d10(or 6) + your constitution modifier per Paladin level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')

@@ -11,7 +11,7 @@ def Barbarian(gender):
 	# Hit Points
 	print('Hit Dice\n -d12')
 	print('Hit points at Level 1\n 12 + constitution modifier')
-	print('Hit Points at Higher Levels: 1d12(or 7) + your constitution modifier per barbarian level after 1st')
+	print('Hit Points at Higher Levels: roll 1d12(or 7) + your constitution modifier per barbarian level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies:')

@@ -14,7 +14,7 @@ def Bard(x):
 	#Hit Points at 1st Level:
 	print('Hit points at Level 1\n 8 + Constitution_mod')
 	#Hit Points at Higher Levels:
-	print('Hit Points at Higher Levels: 1d8(or 5) + your constitution modifier per barbarian level after 1st')
+	print('Hit Points at Higher Levels: roll 1d8(or 5) + your constitution modifier per barbarian level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
