@@ -11,7 +11,7 @@ Because of the shear volume of text required for the project, many files are gen
 # Formatting
 
 - LF Line Endings (See [wikipedia](https://en.wikipedia.org/wiki/Newline))
-- Double-spaced indents
+- Tab indents
 - UTF-8 Encoding
 - lowercase_underscore_variable_names
 - camel_Case_Underscore_Function_Names
