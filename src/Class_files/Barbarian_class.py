@@ -34,14 +34,14 @@ def Barbarian(gender):
         weapon, damage = Weapons.martial_melee_weapon('Greataxe')
     else:
         weapon, damage = Weapons.martial_melee_weapon()
-    print(f'  -Primary weapon: {weapon}, damage: {damage}')
+    print(f'  -Primary weapon: {weapon,damage}')
     #second weapon choice
     second_choice = random.choice([1,3])
     if second_choice == 1:
         weapon, damage = Weapons.simple_melee_weapon('Handaxe')
     else:
         weapon, damage = Weapons.simple_melee_weapon()
-    print(f'  -Secondary weapon: {weapon}, damage: {damage}')
+    print(f'  -Secondary weapon: {weapon,damage}')
     #equipment pack
     print('-Equipment pack')
     equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
