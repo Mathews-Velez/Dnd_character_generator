@@ -5,31 +5,23 @@ def Cleric(x):
 
 	#Print breif description
 	print('\n\nYour class\n\nCleric\n -As well as with bards, clerics cover a wide amount of possibilities depending on the god you choose to follow. They are high spirited servants of their deities and follow their domains to choose a way of life. Both a warrior and spellcaster, they are able to cover practically any role in a party. Depending on their subclass, their Channel Divinity ability acts in different ways, granting direct powers from their gods.')
-	#Print Class Features
-	print('For stat priority, Wisdom followed by Strength or Constitution.')
+	
+	print('\nFor stat priority, Wisdom followed by Strength or Constitution.\n')
 
 	#Hit points
-	#Hit Dice:
 	print('Hit Dice\n -d8')
-	#Hit Points at 1st Level:modifier
 	print('Hit points at Level 1\n 8 + Constitution_mod')
-	#Hit Points at Higher Levels:
 	print('Hit Points at Higher Levels: roll 1d8(or 5) + your constitution modifier per Cleric level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
 	print('-Armour:\n -Light armor, medium armor, shields')
-	#Weapons:
 	print('-Weapons:\n -Simple weapons')
-	#Tools:
 	print('-Tools:\n -None')
-	#Saving Throws:
 	print('-Saving Throws:\n -Wisdom, Charisma')
 
 	#Skills
 	skills = ('History','Insight','Medicine','Persuasion','Religion')
-	#fetching 2 unique strings from the tuple skills
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -60,8 +52,9 @@ def Cleric(x):
 		elif melee_or_range == 'range':
 			weapon,damage = Weapons.simple_ranged_weapon()
 	print(f'  Secondary weapon{weapon,damage}')
+	
 	#equipment pack
-	print('-equipment pack')
+	print('-class equipment pack')
 	equipment_choice = random.choice([1,2])
 	if equipment_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')

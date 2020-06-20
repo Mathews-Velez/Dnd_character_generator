@@ -6,35 +6,28 @@ def Bard(x):
 	#Print breif description
 	print('\n\nYour class\n\nBard\n -A true jack of all trades; a bard can cover great amounts of ground when speaking about what they are able to do. A performer at heart, an inspiration to its allies, but above all a foul-mouthed to its foes. With its great charisma, his/her voice becomes its greatest weapon.')
 	#Print Class Features
-	print('For stat priority, Charisma followed by dexterity')
+	print('\nFor stat priority, Charisma followed by dexterity\n')
 
 	#Hit points
-	#Hit Dice:
 	print('Hit Dice\n -d8')
-	#Hit Points at 1st Level:
 	print('Hit points at Level 1\n 8 + Constitution_mod')
-	#Hit Points at Higher Levels:
 	print('Hit Points at Higher Levels: roll 1d8(or 5) + your constitution modifier per barbarian level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
 	print('-Armour:\n -Light armor')
-	#Weapons:
 	print('-Weapons:\n -Simple weapons, Handcrossbows, longswords, rapiers, shortswords')
-	#Tools:
 	print('-Tools:\n -Three musical instruments of your choice')
-	#Saving Throws:
 	print('-Saving Throws:\n -Dexterity, Charisma')
 
 	#Skills
 	skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
-	#fetching 2 unique strings from the tuple skills
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
 	#equipment
 	print('\nClass Equipment')
+	
 	#weapons
 	print('-Weapons')
 	#first choice weapon
@@ -53,6 +46,7 @@ def Bard(x):
 	else:
 		weapon, damage = Weapons.simple_melee_weapon()
 	print(f'  Secondary weapon{weapon,damage}')
+	
 	#equipment pack
 	print('-equipment pack')
 	Thrid_choice = random.choice([1,2])

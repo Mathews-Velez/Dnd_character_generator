@@ -5,37 +5,28 @@ def Druid(x):
 
 	#Print breif description
 	print('\n\nYour class\n\nDruid\n -Preservers of balance and nature’s warriors, the druids aid their party members by using great support spells, as well as heavy damage dealing ones. They speak the language of the flora and fauna, as well as they can shapeshift into a wide amount of beasts for combat or situational purposes.')
-	#Print Class Features
-	print('For stat priority, Wisdom followed by Constitution.')
+	print('\nFor stat priority, Wisdom followed by Constitution.\n')
 
 	#Hit points
-	#Hit Dice:
 	print('Hit Dice\n -d8')
-	#Hit Points at 1st Level:
 	print('Hit points at Level 1\n 8 + Constitution_mod')
-	#Hit Points at Higher Levels:
 	print('Hit Points at Higher Levels: roll 1d8(or 5) + your constitution modifier per Druid level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
 	print('-Armour:\n -Light armor, medium armor, sheild,will not wear anything made of metal')
-	#Weapons:
 	print('-Weapons:\n -Clubs,Daggers,Darts,Javelins,Maces, Quarter staffs,Scimitars, Sickles, Slings, Spears')
-	#Tools:
 	print('-Tools:\n -Herbalism kit')
-	#Saving Throws:
 	print('-Saving Throws:\n -Wisdom, Intelligence')
 
 	#Skills
 	skills = ('Arcana','Animal Handling','Insight','Medicine','Nature','Perception','Religion','Survival')
-	#fetching 2 unique strings from the tuple skills
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
 	#equipment
 	print('\nClass Equipment')
-
+	
 	#weapons
 	print('-Weapons')
 	#first choice weapon
