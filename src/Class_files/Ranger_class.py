@@ -3,56 +3,44 @@ import Class_files.Weapons as Weapons
 import Class_files.Equipment_packs as Equipment_packs
 def Ranger(x):
 
-	#Print breif description
-	print('\n\nYour class\n\nRanger\n -')
-	#Print Class Features
-	print('For stat priority, ')
+	#Class
+	print('\n\nYour class\n\nRanger\n -A natural explorer seeking adventures, who on their way found a special hatred towards a certain beast or monster. Able to master any fighting style as long as they don’t involve heavy weapons or armor. Spellcasters by default, due to their connection with nature and/or the Feywild, they are excellent scouts and allies to have by your side.')
+	
+	print('\nFor stat priority, Dexterity followed by Wisdom\n')
 
 	#Hit points
-	#Hit Dice:
-	print('Hit Dice\n -')
-	#Hit Points at 1st Level:
-	print('Hit points at Level 1\n  + Constitution_mod')
-	#Hit Points at Higher Levels:
-	print('Hit Points at Higher Levels:  + your constitution modifier per Ranger level after 1st')
+	print('Hit Dice\n -1d10')
+	print('Hit points at Level 1\n 10 + Constitution_mod')
+	print('Hit Points at Higher Levels: roll 1d10(or6) + your constitution modifier per Ranger level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
-	print('-Armour:\n -All armor and shields')
-	#Weapons:
+	print('-Armour:\n -Light armor, Medium armor, Shields')
 	print('-Weapons:\n -Simple weapons, Martial weapons')
-	#Tools: None
 	print('-Tools:\n -None')
-	#Saving Throws:
-	print('-Saving Throws:\n -Strength, Constitution')
+	print('-Saving Throws:\n -Strength, Dexterity')
 
 	#Skills
-	skills = ('')
-	#fetching 2 unique strings from the tuple skills
-	chosen_skills = random.sample(skills,2)
+	skills = ('Animal handling','Athletics','Insight','Investigation','Nature','Perception','Stealth','Survival')
+	chosen_skills = random.sample(skills,3)
 	print(f'Skills:\n -{chosen_skills}')
 
-	#equipment
+	#Equipment
 	print('\nClass Equipment')
-	#weapons
+	
+	#Weapons
 	print('-Weapons')
-
 	#first choice weapon
 	first_choice = random.choice([1,2])
 	if first_choice == 1:
-		weapon,damage = Weapons.martial_melee_weapon()
+		weapon,damage = Weapons.martial_melee_weapon('Shortsword')
 	elif first_choice == 2:
 		weapon,damage= Weapons.martial_melee_weapon()
-
-	print(f'  Primary weapon {weapon,damage}')
+	print(f'  Primary weapon 2{weapon,damage}')
 
 	#second weapon choice
 	second_choice = random.choice([1,2])
-	if second_choice == 1:
-		weapon, damage = Weapons.simple_ranged_weapon('Light Crossbow')
-	elif second_choice == 2:
-		weapon, damage = Weapons.simple_melee_weapon('Handaxe')
+	weapon, damage = Weapons.martial_ranged_weapon('Longbow')
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
