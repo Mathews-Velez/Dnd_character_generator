@@ -10,8 +10,8 @@ def Barbarian(gender):
 
 	# Hit Points
 	print('Hit Dice\n -d12')
-	print('Hit points at Level 1\n 12 + constitution modifier')
-	print('Hit Points at Higher Levels: roll 1d12(or 7) + your constitution modifier per barbarian level after 1st')
+	print('Hit points at Level 1\n -12 + constitution modifier')
+	print('Hit Points at Higher Levels:\n -roll 1d12(or 7) + your constitution modifier per barbarian level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies:')
@@ -22,28 +22,28 @@ def Barbarian(gender):
 
 	#Skills
 	skills = ('Animal Handling','Athletics','Intimidation','Nature','Perception','Survival')
-	chosen_skills = random.sample(skills, 2)# two unique skills
+	chosen_skills = random.sample(skills, 2)
 	print(f'Skills:\n -{chosen_skills}')
 
 	#equipment
 	print('\nClass Equipment')
 
 	#Weapons
-	print('-Weapons')
+	print('-Weapons:\n[weapon]:[Damage,Damage_type] ')
 	#first choice weapon
 	first_choice = random.choice([1,3])
 	if first_choice == 1:
 		weapon, damage = Weapons.martial_melee_weapon('Greataxe')
 	else:
 		weapon, damage = Weapons.martial_melee_weapon()
-	print(f'  -Primary weapon: {weapon}, damage: {damage}')
+	print(f'  -Primary weapon: {weapon, damage}')
 	#second weapon choice
 	second_choice = random.choice([1,3])
 	if second_choice == 1:
-		weapon, damage = Weapons.simple_melee_weapon('Handaxe')
+		s_weapon, s_damage = Weapons.simple_melee_weapon('Handaxe')
 	else:
-		weapon, damage = Weapons.simple_melee_weapon()
-	print(f'  -Secondary weapon: {weapon}, damage: {damage}')
+		s_weapon, s_damage = Weapons.simple_melee_weapon()
+	print(f'  -Secondary weapon: {s_weapon, s_damage}')
 
 	#equipment pack
 	print('-Equipment pack')
