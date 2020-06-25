@@ -1,7 +1,7 @@
 #random_npc_encounter_generator
 import random, Races, Classes, Backgrounds
 
-while True:
+def main():
 
 	print(' \n\nWelcome to Dungeon and Dragons Character Generator \n')
 
@@ -25,3 +25,7 @@ while True:
 	try_again = input('\n\nTry again? (y/n): ')
 	if try_again.lower()[0] == 'n':
 		break
+
+if __name__ == "__main__":
+	while True:
+		main()

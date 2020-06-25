@@ -10,7 +10,7 @@ Run `git clone https://Mathews-Velez/Dnd-_Character_Generator/`. If you only wan
 
 # Usage
 
-No inputs are required, simply run `python3 main.py`, and follow the instructions provided. `main.py` is located in the `src` directory.
+No inputs are required, simply run `python3 __main__.py`, and follow the instructions provided. `__main__.py` is located in the `src` directory.
 
 ---
 
