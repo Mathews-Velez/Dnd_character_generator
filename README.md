@@ -6,10 +6,15 @@ Generate race, class, and backgrounds for DND characters.
 
 # Setup
 
+## Requirements
+- [GNU Make](https://www.gnu.org/software/make/)
+- [setuptools](https://pypi.org/project/setuptools/)
+
 Clone the repo, then run `make` to build and install the package. This will install the package to your local site-packages as defined by your `pip` installation.
 
 ```sh
-git clone https://Mathews-Velez/Dnd-_Character_Generator/
+git clone https://github.com/Mathews-Velez/Dnd-_Character_Generator/
+cd Dnd-_character_generator
 make
 ```
 
