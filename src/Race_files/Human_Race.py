@@ -1,4 +1,5 @@
-import Dice_roll_gen, random
+import random
+from dnd_character_generator import Dice_roll_gen
 
 def Human(gender):
 

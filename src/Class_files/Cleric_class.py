@@ -1,11 +1,11 @@
-import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+import random
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Cleric(x):
 
 	#Print breif description
 	print('\n\nYour class\n\nCleric\n -As well as with bards, clerics cover a wide amount of possibilities depending on the god you choose to follow. They are high spirited servants of their deities and follow their domains to choose a way of life. Both a warrior and spellcaster, they are able to cover practically any role in a party. Depending on their subclass, their Channel Divinity ability acts in different ways, granting direct powers from their gods.')
-	
+
 	print('\nFor stat priority, Wisdom followed by Strength or Constitution.\n')
 
 	#Hit points
@@ -52,7 +52,7 @@ def Cleric(x):
 		elif melee_or_range == 'range':
 			weapon,damage = Weapons.simple_ranged_weapon()
 	print(f'  Secondary weapon{weapon,damage}')
-	
+
 	#equipment pack
 	print('-class equipment pack')
 	equipment_choice = random.choice([1,2])

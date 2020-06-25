@@ -1,4 +1,4 @@
-from Background_files import Acolyte_Background, Charlatan_Background, Criminal_Background
+from dnd_character_generator.Background_files import Acolyte_Background, Charlatan_Background, Criminal_Background
 
 background_list = {
 	'Acolyte': Acolyte_Background.Acolyte,

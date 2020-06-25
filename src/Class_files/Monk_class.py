@@ -1,11 +1,11 @@
 import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Monk(x):
 
 	#Print breif description
 	print('\n\nYour class\n\nMonk\n -Martial artists who can channel their Ki to do impressive feats as if they were magic users. No armor is necessary, just dexterity and the power of your mind. Deflect missiles thrown at you, changing the target to your enemies, move at the speed of the wind and fill your foes’ faces with a flurry blows.')
-	
+
 	print('\nFor stat priority, Dexterity followed by Wisdom and then Constitution\n')
 
 	#Hit points
@@ -26,7 +26,7 @@ def Monk(x):
 
 	#equipment
 	print('\nEquipment')
-	
+
 	#weapons
 	print('-Weapons')
 
@@ -41,7 +41,7 @@ def Monk(x):
 	#second weapon
 	weapon, damage = Weapons.simple_ranged_weapon('Dart')
 	print(f'  Secondary weapon 10{weapon,damage}')
-	
+
 	#equipment pack
 	print('-Class Equipment Pack')
 	Thrid_choice = random.choice([1,2])

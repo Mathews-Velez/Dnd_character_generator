@@ -1,11 +1,11 @@
 import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Ranger(x):
 
 	#Class
 	print('\n\nYour class\n\nRanger\n -A natural explorer seeking adventures, who on their way found a special hatred towards a certain beast or monster. Able to master any fighting style as long as they don’t involve heavy weapons or armor. Spellcasters by default, due to their connection with nature and/or the Feywild, they are excellent scouts and allies to have by your side.')
-	
+
 	print('\nFor stat priority, Dexterity followed by Wisdom\n')
 
 	#Hit points
@@ -27,7 +27,7 @@ def Ranger(x):
 
 	#Equipment
 	print('\nClass Equipment')
-	
+
 	#Weapons
 	print('-Weapons')
 	#first choice weapon

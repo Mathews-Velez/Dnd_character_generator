@@ -1,4 +1,4 @@
-from Class_files import Barbarian_class,\
+from dnd_character_generator.Class_files import Barbarian_class,\
 	Bard_class,\
 	Cleric_class,\
 	Ranger_class,\

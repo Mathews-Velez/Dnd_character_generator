@@ -1,6 +1,6 @@
 import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Rogue(x):
 
 	#Print breif description
@@ -44,13 +44,13 @@ def Rogue(x):
 	if second_choice == 1:
 		weapon, damage = Weapons.simple_ranged_weapon('Light Crossbow')
 		print(f'  Secondary weapon{weapon,damage} with 20 arrows')
-	elif second_choice == 2: 
+	elif second_choice == 2:
 		weapon, damage = Weapons.martial_melee_weapon('Shortsword')
 		print(f'  Secondary weapon{weapon,damage}')
 	#third weapon choice
 	weapon, damage = Weapons.simple_melee_weapon('Dagger')
 	print(f'  Third weapon 2{weapon,damage}')
-	
+
 	#armor
 	print('-Armor')
 	print(' Leather armor')

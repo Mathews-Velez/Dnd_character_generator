@@ -1,6 +1,6 @@
-import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+import random
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Druid(x):
 
 	#Print breif description
@@ -26,7 +26,7 @@ def Druid(x):
 
 	#equipment
 	print('\nClass Equipment')
-	
+
 	#weapons
 	print('-Weapons')
 	#first choice weapon

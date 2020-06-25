@@ -6,11 +6,26 @@ Generate race, class, and backgrounds for DND characters.
 
 # Setup
 
-Run `git clone https://Mathews-Velez/Dnd-_Character_Generator/`. If you only want to use the program, download the `src` directory and rename it to something like `dnd_gen`.
+Clone the repo, then run `make` to build and install the package. This will install the package to your local site-packages as defined by your `pip` installation.
+
+```sh
+git clone https://Mathews-Velez/Dnd-_Character_Generator/
+make
+```
+
+## `make` Arguments
+- build: create the build files
+- clean: remove the build files
+- install: install the package
+- uninstall: uninstall the package
+- wheel/source: only build the wheel/source distribution
+
+## Notes
+`make` will build from source instead of wheel by default. Source `.tar.gz` files are simply much smaller than wheels `.whl`. Run `make clean wheel install` to build and install from a wheel.
 
 # Usage
 
-No inputs are required, simply run `python3 __main__.py`, and follow the instructions provided. `__main__.py` is located in the `src` directory.
+The setup installs a shell script `dcg`. Typing this anywhere into your terminal will run the program. Note: the Python Scripts Entry-point may not exist on your path. If this is the case, `pip` will likely detect it and warn you to update your path. If typing `dcg` does not work, either the file cannot be found on your path, or something has gone wrong with the install. Try running `make install` again before opening an issue.
 
 ---
 

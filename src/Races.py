@@ -1,4 +1,4 @@
-from Race_files import Aasimar_Race,\
+from dnd_character_generator.Race_files import Aasimar_Race,\
 	Dragonborn_Race,\
 	Dwarf_Race,\
 	Elf_Race,\

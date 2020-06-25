@@ -1,5 +1,6 @@
 #random_npc_encounter_generator
-import random, Races, Classes, Backgrounds
+import random
+from dnd_character_generator import *
 
 def main():
 
@@ -21,11 +22,11 @@ def main():
 	Classes.class_list[class_](race)# generate all the info on the characters class
 	Backgrounds.background_list[background]()# generate all the info on the characters background
 
-	#Exit Function
-	try_again = input('\n\nTry again? (y/n): ')
-	if try_again.lower()[0] == 'n':
-		break
-
 if __name__ == "__main__":
 	while True:
 		main()
+
+		#Exit Function
+		try_again = input('\n\nTry again? (y/n): ')
+		if try_again.lower()[0] == 'n':
+			break

@@ -1,11 +1,11 @@
 import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Paladin(x):
 
 	#Print breif description
 	print('\n\nYour class\n\nPaladin\n -A paladin is a person guided by an oath, their force of will and devotion so strong they are granted the ability to cast spells to smite their foes. They fight for justice and righteousness, with the idea of following their oath and ideals to the very end. For this, they use heavy armor to be front liners and protect their allies.')
-	
+
 	print('\nFor stat priority, Strength followed by Charisma\n')
 
 	#Hit points

@@ -1,6 +1,6 @@
-import random 
-import Class_files.Weapons as Weapons
-import Class_files.Equipment_packs as Equipment_packs
+import random
+from dnd_character_generator.Class_files import Weapons
+from dnd_character_generator.Class_files import Equipment_packs
 def Bard(x):
 
 	#Print breif description
@@ -27,7 +27,7 @@ def Bard(x):
 
 	#equipment
 	print('\nClass Equipment')
-	
+
 	#weapons
 	print('-Weapons')
 	#first choice weapon
@@ -46,7 +46,7 @@ def Bard(x):
 	else:
 		weapon, damage = Weapons.simple_melee_weapon()
 	print(f'  Secondary weapon{weapon,damage}')
-	
+
 	#equipment pack
 	print('-equipment pack')
 	Thrid_choice = random.choice([1,2])
