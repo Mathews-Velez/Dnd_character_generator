@@ -47,13 +47,15 @@ def Bard(x):
 		weapon, damage = Weapons.simple_melee_weapon()
 	print(f'  Secondary weapon{weapon,damage}')
 
-	#equipment pack
-	print('-equipment pack')
-	Thrid_choice = random.choice([1,2])
-	if Thrid_choice == 1:
-		equipment_pack = Equipment_packs.equipment_pack('Diplomats_pack')
-	if Thrid_choice == 2:
-		equipment_pack = Equipment_packs.equipment_pack('Entertainers_pack')
-	print(f'  {equipment_pack}')
 	Fourth_choice = Weapons.simple_melee_weapon('Dagger')
 	print(f'  Leather armour and a {Fourth_choice} ')
+
+	#equipment pack
+	print('-equipment pack')
+	e_pack = random.choice(['Diplomats_pack','Entertainers_pack'])
+	if e_pack == 'Diplomats_pack':
+		equipment_pack = Equipment_packs.equipment_pack(e_pack)
+	elif e_pack == 'Entertainers_pack':
+		equipment_pack = Equipment_packs.equipment_pack(e_pack)
+	print(f'  {e_pack}:{equipment_pack}')
+
