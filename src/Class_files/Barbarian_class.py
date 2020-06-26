@@ -48,4 +48,4 @@ def Barbarian(x):
 	#equipment pack
 	print('-Equipment pack')
 	equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
-	print(f'  -{equipment_pack}')
+	print(f'  Explorers pack: {equipment_pack}')
