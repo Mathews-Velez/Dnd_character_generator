@@ -2,7 +2,7 @@ import random
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
 
-def Barbarian(gender):
+def Barbarian(x):
 
 	# brief description and features
 	print('\n\nYour class\n\nBarbarian\n -Filled with their destructive rage and primal instincts, the barbarian is the class you choose if you want to be the meat shield in the front line dealing great amounts of damage. Who needs a shield when you can stand your foes’ puny attacks with your hardened skin and/or high evasiveness?')
