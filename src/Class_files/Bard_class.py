@@ -22,14 +22,14 @@ def Bard(x):
 
 	#Skills
 	skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
-	chosen_skills = random.sample(skills,2)
+	chosen_skills = random.sample(skills,3)
 	print(f'Skills:\n -{chosen_skills}')
 
 	#equipment
 	print('\nClass Equipment')
 
 	#weapons
-	print('-Weapons')
+	print('-Weapons:\n[weapon]:[Damage,Damage_type]')
 	#first choice weapon
 	first_choice = random.choice([1,3])
 	if first_choice == 1:
@@ -38,20 +38,24 @@ def Bard(x):
 		weapon,damage= Weapons.martial_melee_weapon('Longsword')
 	elif first_choice == 3:
 		weapon,damage = Weapons.simple_melee_weapon()
-	print(f'  Primary weapon {weapon,damage}')
+	print(f'  Primary weapon: {weapon,damage}')
 	#second weapon choice
 	second_choice = random.choice([1,3])
 	if second_choice == 1:
 		weapon, damage = Weapons.simple_melee_weapon('Handaxe')
 	else:
 		weapon, damage = Weapons.simple_melee_weapon()
-	print(f'  Secondary weapon{weapon,damage}')
+	print(f'  Secondary weapon: {weapon,damage}')
+	#third weapon choice
+	fourth_choice = Weapons.simple_melee_weapon('Dagger')
+	print(f'  Third weapon: {fourth_choice}')
 
-	Fourth_choice = Weapons.simple_melee_weapon('Dagger')
-	print(f'  Leather armour and a {Fourth_choice} ')
-
-	#equipment pack
-	print('-equipment pack')
+	#armor
+	print(f'-Armour')
+	print('  Leather armor')
+	
+	 #equipment pack
+	print('-Equipment pack')
 	e_pack = random.choice(['Diplomats_pack','Entertainers_pack'])
 	if e_pack == 'Diplomats_pack':
 		equipment_pack = Equipment_packs.equipment_pack(e_pack)
