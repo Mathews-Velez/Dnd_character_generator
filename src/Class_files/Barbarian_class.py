@@ -29,7 +29,7 @@ def Barbarian(x):
 	print('\nClass Equipment')
 
 	#Weapons
-	print('-Weapons:\n[weapon]:[Damage,Damage_type] ')
+	print('-Weapons:\n[weapon]:[Damage,Damage_type]')
 	#first choice weapon
 	first_choice = random.choice([1,3])
 	if first_choice == 1:
