@@ -31,14 +31,14 @@ def Barbarian(x):
 	#Weapons
 	print('-Weapons:\n[weapon]:[Damage,Damage_type]')
 	#first choice weapon
-	first_choice = random.choice([1,3])
+	first_choice = random.choice([1,2])
 	if first_choice == 1:
 		weapon, damage = Weapons.martial_melee_weapon('Greataxe')
 	else:
 		weapon, damage = Weapons.martial_melee_weapon()
 	print(f'  -Primary weapon: {weapon, damage}')
 	#second weapon choice
-	second_choice = random.choice([1,3])
+	second_choice = random.choice([1,2])
 	if second_choice == 1:
 		s_weapon, s_damage = Weapons.simple_melee_weapon('Handaxe')
 	else:
@@ -49,3 +49,5 @@ def Barbarian(x):
 	print('-Equipment pack')
 	equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
 	print(f'  Explorers pack: {equipment_pack}')
+
+	
