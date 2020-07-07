@@ -9,27 +9,19 @@ def Warlock(x):
 	print('\nFor stat priority, Charisma followed by Wisdom and then Constitution\n')
 
 	#Hit points
-	#Hit Dice:
 	print('Hit Dice\n -1d6 per sorcerer level')
-	#Hit Points at 1st Level:
 	print('Hit points at Level 1\n  6 + Constitution_mod')
-	#Hit Points at Higher Levels:
 	print('Hit Points at Higher Levels: 1d6(or 4)+ your constitution modifier per Warlock level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
 	print('-Armour:\n -None')
-	#Weapons:
 	print('-Weapons:\n -Daggers, Darts, Slings, Quarterstaffs, Light Crossbows')
-	#Tools: None
 	print('-Tools:\n -None')
-	#Saving Throws:
 	print('-Saving Throws:\n -Constitution, Charisma')
 
 	#Skills
 	skills = ('Arcana','Deception','Insight','Intimidation','Persuassion','Religion','Religion')
-	#fetching 2 unique strings from the tuple skills
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
