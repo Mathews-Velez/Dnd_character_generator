@@ -6,7 +6,7 @@ def Warlock(x):
 	#Print breif description
 	print('\n\nYour class\n\nWarlock\n -Warlocks make pacts with extremely powerful beings, who don’t mind lending some power as they have so much they don’t even notice. However, it all comes with a price: There’s a reason this entity decided to accept the pact, and you might need to do some stuff to maintain the accord. Decide whether you want to have a big spellbook full of incantations, a strange summonable weapon or weird servants. Will you perish in the way to becoming an eldritch master?')
 	#Print Class Features
-	print('For stat priority, Charisma followed by Wisdom and then Constitution')
+	print('\nFor stat priority, Charisma followed by Wisdom and then Constitution\n')
 
 	#Hit points
 	#Hit Dice:

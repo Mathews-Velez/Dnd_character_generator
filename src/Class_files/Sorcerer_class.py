@@ -6,7 +6,7 @@ def Sorcerer(x):
 	#Print breif description
 	print('\n\nYour class\n\nSorcerer\n -Due to some random or pre-established occurrence, magic runs through you. This means you can “cheat” in a certain way to be able to use magic at will, instead of having to learn how to cast it. Sorcerers are also equipped with a pool of magic they get their sorcery points from, letting them twist spells to their will in different ways.')
 	#Print Class Features
-	print('For stat priority, Charisma followed by Constitution')
+	print('\nFor stat priority, Charisma followed by Constitution\n')
 
 	#Hit points
 	print('Hit Dice\n -d6')
