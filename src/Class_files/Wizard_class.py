@@ -4,32 +4,24 @@ from dnd_character_generator.Class_files import Equipment_packs
 def Wizard(x):
 
 	#Print breif description
-	print('\n\nYour class\n\nMonk\n -Martial artists who can channel their Ki to do impressive feats as if they were magic users. No armor is necessary, just dexterity and the power of your mind. Deflect missiles thrown at you, changing the target to your enemies, move at the speed of the wind and fill your foes’ faces with a flurry blows.')
-	#Print Class Features
-	print('For stat priority, Dexterity followed by Wisdom and then Constitution')
+	print('\n\nYour class\n\nWizard\n -Wizards decide to go in adventures to further their knowledge. The great world in front of them has thousands of spells for you to learn and master. With a spellbook at hand, they will look for or buy them to become a greater spellcaster. Just transcribe them to the book and you’ll understand why wizards are such a versatile class. The amount of spells they can learn greatly surpasses all other classes’ lists.')
+	
+	print('For stat priority, ')
 
 	#Hit points
-	#Hit Dice:
-	print('Hit Dice\n -d8')
-	#Hit Points at 1st Level:
-	print('Hit points at Level 1\n 8 + Constitution_mod')
-	#Hit Points at Higher Levels: 1d8 (or 5) + your constitution modifier per barbarian level after 1st
-	print('Hit Points at Higher Levels: 1d10(or 6) + your constitution modifier per Fighter level after 1st')
+	print('Hit Dice\n -d6')
+	print('Hit points at Level 1\n  + Constitution_mod')
+	print('Hit Points at Higher Levels: 1d(or ) + your constitution modifier per level after 1st')
 
 	#Proficiencies
 	print('\nProficiencies')
-	#Armor:
-	print('-Armour:\n -All armor and shields')
-	#Weapons:
-	print('-Weapons:\n -Simple weapons, Martial weapons')
-	#Tools: None
+	print('-Armour:\n -None')
+	print('-Weapons:\n -Daggers, Darts, Slings, Quarterstaff, Light crossbow ')
 	print('-Tools:\n -None')
-	#Saving Throws:
-	print('-Saving Throws:\n -Strength, Constitution')
+	print('-Saving Throws:\n -Intelligence, Wisdom ')
 
 	#Skills
-	skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
-	#fetching 2 unique strings from the tuple skills
+	skills = ('Arcana','History','Insight','Investigation','Medicine','Religion')
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -41,25 +33,25 @@ def Wizard(x):
 	#first choice weapon
 	first_choice = random.choice([1,2])
 	if first_choice == 1:
-		weapon,damage = Weapons.martial_melee_weapon()
+		weapon,damage = Weapons.simple_melee_weapon('Quarterstaff')
 	elif first_choice == 2:
-		weapon,damage= Weapons.martial_melee_weapon()
+		weapon,damage= Weapons.simple_melee_weapon('Dagger')
 
 	print(f'  Primary weapon {weapon,damage}')
 
 	#second weapon choice
-	second_choice = random.choice([1,2])
-	if second_choice == 1:
-		weapon, damage = Weapons.simple_ranged_weapon('Light Crossbow')
-	elif second_choice == 2:
-		weapon, damage = Weapons.simple_melee_weapon('Handaxe')
-	print(f'  Secondary weapon{weapon,damage}')
+	second_choice = random.choice(['c','a'])
+	if second_choice == 'c':
+		spellcast_helper = 'a component pouch'
+	elif second_choice =='a':
+		spellcast_helper = 'an arcance focus'
+	print(f'  Spellcasting helper: {spellcast_helper}')
 
 	#equipment pack
 	print('-equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
-		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')
+		equipment_pack = Equipment_packs.equipment_pack('Scholars_pack')
 	if Thrid_choice == 2:
 		equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
-	print(f'  {equipment_pack}')
+	print(f'  {equipment_pack} and a spellbook')
