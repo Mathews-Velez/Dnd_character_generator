@@ -1,6 +1,6 @@
 import random
 def Charlatan():
-	print('\n\nYour Background \n\nCharlatan\n')
+	
 	Favorite_schemes = ("I cheat at games of chance","I shave coins or forge documents","I insinuate myself into people's lives to prey on their weakness and secure their fortunes","I put on identities like clothes","I run sleight of hand cons on street corners.","I convince people that worthless junk is worth their hard earned money")
 	Favorite_scheme = random.choice(Favorite_schemes)
 
@@ -13,6 +13,8 @@ def Charlatan():
 	Flaws = ("I can't resist a pretty face","I'm always in debt.I spend my ill-gotten gains on decadent luxuries faster than I bring them in.","I'm convinced that no one could ever fool me the way I fool others","I'm too greedy for my own good. I can't resist taking a risk if there's money involved.","I can't resist swindling people who are more powerful than me","I hate to admit it and will hate myself for it, but I'll run and perserve my own hide if the going gets tough. ")
 	Flaw = random.choice(Flaws)
 
+	
+	print('\n\nYour Background \n\nCharlatan\n')
 	print(f'Scheme:\n -{Favorite_scheme}')
 	print(f'Trait:\n -{Personality_Trait}')
 	print(f'Ideal:\n -{Ideal}')

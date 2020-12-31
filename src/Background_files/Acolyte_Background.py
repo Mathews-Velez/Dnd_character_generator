@@ -1,6 +1,6 @@
 import random
 def Acolyte():
-	print('\n\nYour Background\n\nAcolyte\n')
+	
 	Personality_Traits = ("I idolize a particular hero of my faith, and constantly refer to that person's dees and examples","I can find common ground between the fiercest enemies, empathizing with them and always working towards peace","I see omens in every event and action. The gods try to speak to us we just need to listen.","Nothing can shake my optimistic attitude.","I (mis)qutoe sacred texts and proverbs in almost every situation.","I am (in)tolerant of other faiths and (dis)respect the worship of other gods","I've enjoyed fine food, drink and high society among my temple's elite. Rough living grates on me","I've spent so long in the temple that I have little practical experiennce dealing with people in the outside world")
 	Personality_Trait = random.choice(Personality_Traits)
 
@@ -14,7 +14,7 @@ def Acolyte():
 	Flaw = random.choice(Flaws)
 
 	#Background Equipment
-
+	print('\n\nYour Background\n\nAcolyte\n')
 	print(f'Trait:\n -{Personality_Trait}')
 	print(f'Ideal:\n -{Ideal}')
 	print(f'Bond:\n -{Bond}')
