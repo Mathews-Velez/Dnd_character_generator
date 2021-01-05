@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Paladin(x):
+def Paladin(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nPaladin\n -A paladin is a person guided by an oath, their force of will and devotion so strong they are granted the ability to cast spells to smite their foes. They fight for justice and righteousness, with the idea of following their oath and ideals to the very end. For this, they use heavy armor to be front liners and protect their allies.')
@@ -21,7 +21,12 @@ def Paladin(x):
 	print('-Saving Throws:\n -Wisdom, Charisma')
 
 	#Skills
-	skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
+	skills = ['Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+	
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -48,7 +53,7 @@ def Paladin(x):
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

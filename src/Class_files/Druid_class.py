@@ -1,7 +1,7 @@
 import random
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Druid(x):
+def Druid(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nDruid\n -Preservers of balance and nature’s warriors, the druids aid their party members by using great support spells, as well as heavy damage dealing ones. They speak the language of the flora and fauna, as well as they can shapeshift into a wide amount of beasts for combat or situational purposes.')
@@ -20,7 +20,12 @@ def Druid(x):
 	print('-Saving Throws:\n -Wisdom, Intelligence')
 
 	#Skills
-	skills = ('Arcana','Animal Handling','Insight','Medicine','Nature','Perception','Religion','Survival')
+	skills = ['Arcana','Animal Handling','Insight','Medicine','Nature','Perception','Religion','Survival']
+	#skill proficiencies overlap check algorithm
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -51,6 +56,6 @@ def Druid(x):
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')
 	print(f'  {equipment_pack}')

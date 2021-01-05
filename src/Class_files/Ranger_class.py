@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Ranger(x):
+def Ranger(reserved_skills):
 
 	#Class
 	print('\n\nYour class\n\nRanger\n -A natural explorer seeking adventures, who on their way found a special hatred towards a certain beast or monster. Able to master any fighting style as long as they don’t involve heavy weapons or armor. Spellcasters by default, due to their connection with nature and/or the Feywild, they are excellent scouts and allies to have by your side.')
@@ -21,7 +21,12 @@ def Ranger(x):
 	print('-Saving Throws:\n -Strength, Dexterity')
 
 	#Skills
-	skills = ('Animal handling','Athletics','Insight','Investigation','Nature','Perception','Stealth','Survival')
+	skills = ['Animal handling','Athletics','Insight','Investigation','Nature','Perception','Stealth','Survival']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+	
 	chosen_skills = random.sample(skills,3)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -44,7 +49,7 @@ def Ranger(x):
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

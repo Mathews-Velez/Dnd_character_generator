@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Warlock(x):
+def Warlock(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nWarlock\n -Warlocks make pacts with extremely powerful beings, who don’t mind lending some power as they have so much they don’t even notice. However, it all comes with a price: There’s a reason this entity decided to accept the pact, and you might need to do some stuff to maintain the accord. Decide whether you want to have a big spellbook full of incantations, a strange summonable weapon or weird servants. Will you perish in the way to becoming an eldritch master?')
@@ -21,7 +21,12 @@ def Warlock(x):
 	print('-Saving Throws:\n -Constitution, Charisma')
 
 	#Skills
-	skills = ('Arcana','Deception','Insight','Intimidation','Persuassion','Religion','Religion')
+	skills = ['Arcana','Deception','Insight','Intimidation','Persuassion','Religion','Religion']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+			
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -52,7 +57,7 @@ def Warlock(x):
 	print(f'  Spellcasting helper: {spellcast_helper}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

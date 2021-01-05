@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Wizard(x):
+def Wizard(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nWizard\n -Wizards decide to go in adventures to further their knowledge. The great world in front of them has thousands of spells for you to learn and master. With a spellbook at hand, they will look for or buy them to become a greater spellcaster. Just transcribe them to the book and you’ll understand why wizards are such a versatile class. The amount of spells they can learn greatly surpasses all other classes’ lists.')
@@ -21,7 +21,12 @@ def Wizard(x):
 	print('-Saving Throws:\n -Intelligence, Wisdom ')
 
 	#Skills
-	skills = ('Arcana','History','Insight','Investigation','Medicine','Religion')
+	skills = ['Arcana','History','Insight','Investigation','Medicine','Religion']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -48,7 +53,7 @@ def Wizard(x):
 	print(f'  Spellcasting helper: {spellcast_helper}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Scholars_pack')

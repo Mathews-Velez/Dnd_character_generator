@@ -1,7 +1,7 @@
 import random
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Bard(x):
+def Bard(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nBard\n -A true jack of all trades; a bard can cover great amounts of ground when speaking about what they are able to do. A performer at heart, an inspiration to its allies, but above all a foul-mouthed to its foes. With its great charisma, his/her voice becomes its greatest weapon.')
@@ -21,7 +21,12 @@ def Bard(x):
 	print('-Saving Throws:\n -Dexterity, Charisma')
 
 	#Skills
-	skills = ('Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival')
+	skills = ['Acrobatics','Animal Handling','Arcana','Athletics','Deception','History','Insight','Intimidation','Investigation','Medicine','Nature','Perception','Performance','Persuassion','Religion','Sleight of Hand','Stealth','Survival']
+	#skill proficiencies overlap check algorithm
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+
 	chosen_skills = random.sample(skills,3)
 	print(f'Skills:\n -{chosen_skills}')
 

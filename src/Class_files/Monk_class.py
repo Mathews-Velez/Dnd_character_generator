@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Monk(x):
+def Monk(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nMonk\n -Martial artists who can channel their Ki to do impressive feats as if they were magic users. No armor is necessary, just dexterity and the power of your mind. Deflect missiles thrown at you, changing the target to your enemies, move at the speed of the wind and fill your foes’ faces with a flurry blows.')
@@ -20,7 +20,12 @@ def Monk(x):
 	print('-Saving Throws:\n -Strength, Dexterity')
 
 	#Skills
-	skills = ('Acrobatics','Athletics','History','Insight','Religion','Stealth')
+	skills = ['Acrobatics','Athletics','History','Insight','Religion','Stealth']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+	
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -43,7 +48,7 @@ def Monk(x):
 	print(f'  Secondary weapon 10{weapon,damage}')
 
 	#equipment pack
-	print('-Class Equipment Pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

@@ -1,7 +1,7 @@
 import random
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Cleric(x):
+def Cleric(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nCleric\n -As well as with bards, clerics cover a wide amount of possibilities depending on the god you choose to follow. They are high spirited servants of their deities and follow their domains to choose a way of life. Both a warrior and spellcaster, they are able to cover practically any role in a party. Depending on their subclass, their Channel Divinity ability acts in different ways, granting direct powers from their gods.')
@@ -21,7 +21,12 @@ def Cleric(x):
 	print('-Saving Throws:\n -Wisdom, Charisma')
 
 	#Skills
-	skills = ('History','Insight','Medicine','Persuasion','Religion')
+	skills = ['History','Insight','Medicine','Persuasion','Religion']
+	#skill proficiencies overlap check algorithm
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+			
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -54,7 +59,7 @@ def Cleric(x):
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
-	print('-class equipment pack')
+	print('-Equipment pack')
 	equipment_choice = random.choice([1,2])
 	if equipment_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Explorers_pack')

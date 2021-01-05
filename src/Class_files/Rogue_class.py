@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Rogue(x):
+def Rogue(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nRogue\n -Let’s get shady, grab a dagger and start stabbing. Rogues excel at sneaking around, scouting ahead, being dexterous and about everything you would expect a thief to be good at. In dungeons, they can help their party by deactivating traps or opening locked doors. Don’t expect them to wear much armor, nor be able to carry heavy stuff; but were your task to need some delicacy or swashbuckling, you’ve found the right person.')
@@ -21,7 +21,12 @@ def Rogue(x):
 	print('-Saving Throws:\n -Dexterity, Intelligence')
 
 	#Skills
-	skills = ('Acrobatics','Athletics','Deception','Insight','Intimidation','Investigation','Perception','Performance','Persuassion','Sleight of hand','Stealth')
+	skills = ['Acrobatics','Athletics','Deception','Insight','Intimidation','Investigation','Perception','Performance','Persuassion','Sleight of hand','Stealth']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -56,7 +61,7 @@ def Rogue(x):
 	print(' Leather armor')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	packs = random.choice([1,2,3])
 	if packs == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

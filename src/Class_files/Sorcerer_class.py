@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Sorcerer(x):
+def Sorcerer(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nSorcerer\n -Due to some random or pre-established occurrence, magic runs through you. This means you can “cheat” in a certain way to be able to use magic at will, instead of having to learn how to cast it. Sorcerers are also equipped with a pool of magic they get their sorcery points from, letting them twist spells to their will in different ways.')
@@ -21,7 +21,12 @@ def Sorcerer(x):
 	print('-Saving Throws:\n -Charisma, Constitution')
 
 	#Skills
-	skills = ('Arcana','Deception','Intimidation','Persuasion','Religion')
+	skills = ['Arcana','Deception','Intimidation','Persuasion','Religion']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -53,7 +58,7 @@ def Sorcerer(x):
 	print(f'  Spellcasting helper: {spellcast_helper}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')

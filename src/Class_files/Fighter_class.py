@@ -1,7 +1,7 @@
 import random 
 from dnd_character_generator.Class_files import Weapons
 from dnd_character_generator.Class_files import Equipment_packs
-def Fighter(x):
+def Fighter(reserved_skills):
 
 	#Print breif description
 	print('\n\nYour class\n\nFighter\n -What does a fighter do best? Well, fight of course. A really versatile class, as it can work in numerous ways. Add the fighting style and you can choose to have a one handed weapon accompanied by a shield, have a two handed weapon, two one handed ones (dual wielding), a ranged weapon and more! Once you’ve got that decided, ready yourself to start demolishing your foes, be it with your mighty strength or dexterous precision!')
@@ -21,7 +21,12 @@ def Fighter(x):
 	print('-Saving Throws:\n -Strength, Constitution')
 
 	#Skills
-	skills = ('Acrobatics','Animal Handling','Athletics','History','Insight','Intimidation','Perception','Survival')
+	skills = ['Acrobatics','Animal Handling','Athletics','History','Insight','Intimidation','Perception','Survival']
+	#skill proficiencies overlap check
+	for i in reserved_skills:
+		if i in skills:
+			skills.remove(i)
+	
 	chosen_skills = random.sample(skills,2)
 	print(f'Skills:\n -{chosen_skills}')
 
@@ -48,7 +53,7 @@ def Fighter(x):
 	print(f'  Secondary weapon{weapon,damage}')
 
 	#equipment pack
-	print('-equipment pack')
+	print('-Equipment pack')
 	Thrid_choice = random.choice([1,2])
 	if Thrid_choice == 1:
 		equipment_pack = Equipment_packs.equipment_pack('Dungeoneers_pack')
