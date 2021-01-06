@@ -15,6 +15,9 @@ def Charlatan():
 
 	
 	print('\n\nYour Background \n\nCharlatan\n')
+	print('Skill proficiencies:\n -Deception, Sleight of Hand')
+	print('Tool proficiencies:\n -Disguise kit, forgery kit')
+	print('Equipment:\n -A set o f fine clothes, a disguise kit, tools of the con of your choice (ten stoppered bottles filled with colored liquid, a set of weighted dice, a deck of marked cards, or a signet ring of an imaginary duke),and a belt pouch containing 15 gp')
 	print(f'Scheme:\n -{Favorite_scheme}')
 	print(f'Trait:\n -{Personality_Trait}')
 	print(f'Ideal:\n -{Ideal}')

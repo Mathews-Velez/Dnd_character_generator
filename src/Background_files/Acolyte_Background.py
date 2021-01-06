@@ -15,7 +15,13 @@ def Acolyte():
 
 	#Background Equipment
 	print('\n\nYour Background\n\nAcolyte\n')
+	print('Skill proficiencies:\n -Insight, Religion')
+	print('Languages: Two of your choice.')
+	print('Equipment:\n -A holy symbol (a gift to you w hen you entered the priesthood\), a prayer book or prayer wheel, 5 sticks of incense, vestments, a set of common clothes, and a belt pouch containing 15 gp')
 	print(f'Trait:\n -{Personality_Trait}')
 	print(f'Ideal:\n -{Ideal}')
 	print(f'Bond:\n -{Bond}')
 	print(f'Flaw:\n -{Flaw}')
+
+
+ 
