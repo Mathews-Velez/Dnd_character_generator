@@ -19,8 +19,8 @@ def Criminal():
 
 	print('\n\nYour Background \n\nCriminal\n')
 	print('Skill proficiencies:\n -Deception, Sleight of Hand')
-	print('Tool proficiencies: One type of gaming set, theives\' tools')
-	print('Equipment: A crowbar, a set of dark common clothes including a hood, and a belt pouch containing 15 gp.')
+	print('Tool proficiencies:\n -One type of gaming set, theives\' tools')
+	print('Equipment:\n -A crowbar, a set of dark common clothes including a hood, and a belt pouch containing 15 gp.')
 	print(f'Speciality:\n -{Criminal_speciality}')
 	print(f'Trait:\n -{Personality_trait}')
 	print(f'Ideal:\n -{Ideal}')

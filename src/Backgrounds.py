@@ -5,3 +5,11 @@ background_list = {
 	'Charlatan': Charlatan_Background.Charlatan,
 	'Criminal': Criminal_Background.Criminal
 }
+
+background_skill_profinciencies = {
+	'Acolyte': ['Insight','Religion'],
+	'Charlatan':['Deception','Sleight of hand'],
+	'Criminal':['Deception','Steallth']
+}
+
+
