@@ -14,6 +14,7 @@ def equipment_pack (x):
 
 	Scholars_pack = ('a backpack','a book of lore','a bottle of ink','an ink pen','10 sheets of parchment','a small bag of sand','a small knife')
 
+    #assign each tuple to the name as a string in a dictionary
 	#outputting pack selected
 	if x == 'Burglars_pack':
 		return Burglars_pack
