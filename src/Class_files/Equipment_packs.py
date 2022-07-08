@@ -14,21 +14,8 @@ def equipment_pack (x):
 
 	Scholars_pack = ('a backpack','a book of lore','a bottle of ink','an ink pen','10 sheets of parchment','a small bag of sand','a small knife')
 
-    #assign each tuple to the name as a string in a dictionary
+    #Dictionary assingment of each equipmentPack and their title stringified
+    packs= { 'Burglars_pack' : Burglars_pack, 'Diplomats_pack' : Diplomats_pack, 'Dungeoneers_pack' : Dungeoneers_pack, 'Entertainers_pack' : Entertainers_    pack, 'Explorers_pack' : Explorers_pack, 'Prists_kit' : Priests_kit, 'Scholars_pack' : Scholars_pack}
+    #assign each tuple to the name as a string in a dictionary7
 	#outputting pack selected
-	if x == 'Burglars_pack':
-		return Burglars_pack
-	elif x == 'Diplomats_pack':
-		return Diplomats_pack
-	elif x == 'Dungeoneers_pack':
-		return Dungeoneers_pack
-	elif x == 'Entertainers_pack':
-		return Entertainers_pack
-	elif x == 'Explorers_pack':
-		return Explorers_pack
-	elif x == 'Priests_kit':
-		return Priests_kit
-	elif x == 'Scholars_pack':
-		return Scholars_pack
-	else:
-		print('Error invalid input')
+    return packs[x]
