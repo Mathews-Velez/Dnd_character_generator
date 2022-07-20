@@ -7,7 +7,7 @@ def background():
 	Personality_traits = ("I judge people by their actuons, not their words.","If someone is in trouble, I'm always ready to help.","When I set my mind to something. I follow through no matter what gets in my way.","I have a strong sense of fair play and always try to find the most equitable solution to arguments.","I'm confident in my own abilities and do what I can to instill confidence in others.","Thinking is for other people. I prefer action.","I misuse long words in an attempt to sound smarter.","I get bored easily. When am I going to get on with my destiny?")
 	Personality_trait =random.choice(Personality_traits)
 	#Ideal
-	Ideals = ("","","","","","","","")
+	Ideals = ("RESPECT(Good) People deserve to be treated with dignity and respect.", "Fairness (Lawful) No one should get preferential treatment before the law, and no one is above the law." ,"FREEDOM(Chaotic) Tyrants must not be allowed to opress the people.","MIGHT(Evil) If I become strong I can take what I want- what I deserve.","SINCERITY(Neutral) There's no good in pretending I'm something I'm not","DESTINY(Any) Nothing and no one can steer me away from my higher calling.")
 	Ideals =random.choice(Ideals)
 	#Bond
 	Bonds = ("","","","","","","","")
